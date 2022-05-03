@@ -3,11 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Mover : MonoBehaviour
-{
-    [SerializeField] float yValue = 0.01f;
-    [SerializeField] float zValue = 0;
-
-    
+{   
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +14,7 @@ public class Mover : MonoBehaviour
     void Update()
     {
         float xValue = Input.GetAxis("Horizontal");
-        transform.Translate(xValue,yValue,zValue);
+        float zValue = Input.GetAxis("Vertical");
+        transform.Translate(xValue,0,zValue);
     }
 }
