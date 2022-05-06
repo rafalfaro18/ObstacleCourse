@@ -4,13 +4,17 @@ using UnityEngine;
 
 public class Dropper : MonoBehaviour
 {
+    MeshRenderer renderer;
+    Rigidbody rigidbody;
     [SerializeField] float timeToWait = 5f;
     
     // Start is called before the first frame update
     void Start()
     {
-        GetComponent<MeshRenderer>().enabled = false;
-        GetComponent<Rigidbody>().useGravity = false;
+        renderer = GetComponent<MeshRenderer>();
+        renderer.enabled = false;
+        rigidBody = GetComponent<Rigidbody>();
+        rigidBody.useGravity = false;
     }
 
     // Update is called once per frame
@@ -18,8 +22,8 @@ public class Dropper : MonoBehaviour
     {
        if(Time.time > timeToWait) {
            Debug.Log("3 seconds has elapsed");
-           GetComponent<MeshRenderer>().enabled = true;
-           GetComponent<Rigidbody>().useGravity = true;
+           renderer.enabled = true;
+           rigidBody.useGravity = true;
        }
     }
 }
