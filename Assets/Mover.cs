@@ -15,15 +15,19 @@ public class Mover : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Movement was painfully slow in MacBook Pro before making the movement framerate independent with Time.deltaTime
-        float xValue = Input.GetAxis("Horizontal") * Time.deltaTime * moveSpeed;
-        float zValue = Input.GetAxis("Vertical") * Time.deltaTime * moveSpeed;
-        transform.Translate(xValue,0,zValue);
+        MovePlayer();
     }
 
     void PrintInstructions() {
         Debug.Log("Welcome to the game");
         Debug.Log("WASD to move the player or arrow keys");
         Debug.Log("Don't hit the walls!");
+    }
+
+    void MovePlayer() {
+        // Movement was painfully slow in MacBook Pro before making the movement framerate independent with Time.deltaTime
+        float xValue = Input.GetAxis("Horizontal") * Time.deltaTime * moveSpeed;
+        float zValue = Input.GetAxis("Vertical") * Time.deltaTime * moveSpeed;
+        transform.Translate(xValue,0,zValue);
     }
 }
