@@ -283,7 +283,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 402417500}
   m_LocalRotation: {x: -0.0035008043, y: 0.94887596, z: -0.31547454, w: 0.009903633}
-  m_LocalPosition: {x: -0.21003468, y: 6.326231, z: 8.007557}
+  m_LocalPosition: {x: -0.21003467, y: 6.2732306, z: 8.007557}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -560,7 +560,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: -0.0035008043, y: 0.94887596, z: -0.31547454, w: 0.009903633}
-  m_LocalPosition: {x: -0.21003468, y: 6.326231, z: 8.007557}
+  m_LocalPosition: {x: -0.21003467, y: 6.2732306, z: 8.007557}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -614,6 +614,7 @@ GameObject:
   - component: {fileID: 1192892270}
   - component: {fileID: 1192892269}
   - component: {fileID: 1192892273}
+  - component: {fileID: 1192892274}
   m_Layer: 0
   m_Name: Player (Dodgy)
   m_TagString: Untagged
@@ -692,7 +693,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1192892268}
   m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 0.34, z: 0}
+  m_LocalPosition: {x: 0, y: 0.287, z: 0}
   m_LocalScale: {x: 1, y: 0.54882, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -712,6 +713,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 10
+--- !u!54 &1192892274
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1192892268}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1197243900
 GameObject:
   m_ObjectHideFlags: 0
