@@ -9,7 +9,7 @@ public class Dropper : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        GetComponent<Rigidbody>().useGravity = false;
     }
 
     // Update is called once per frame
@@ -17,6 +17,7 @@ public class Dropper : MonoBehaviour
     {
        if(Time.time > timeToWait) {
            Debug.Log("3 seconds has elapsed");
+           GetComponent<Rigidbody>().useGravity = true;
        }
     }
 }
