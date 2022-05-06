@@ -13,6 +13,8 @@ public class Dropper : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(Time.time);
+       if(Time.time > 3) {
+           Debug.Log("3 seconds has elapsed");
+       }
     }
 }
