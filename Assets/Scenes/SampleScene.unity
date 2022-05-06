@@ -641,6 +641,7 @@ GameObject:
   - component: {fileID: 1192892269}
   - component: {fileID: 1192892273}
   - component: {fileID: 1192892274}
+  - component: {fileID: 1192892275}
   m_Layer: 0
   m_Name: Player (Dodgy)
   m_TagString: Untagged
@@ -755,6 +756,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 0
+--- !u!114 &1192892275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1192892268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22cc56a1f6b144ec68eb6438f8561f67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1197243900
 GameObject:
   m_ObjectHideFlags: 0
