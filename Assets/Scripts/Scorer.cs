@@ -8,7 +8,9 @@ public class Scorer : MonoBehaviour
     
     // Install VS Code Snippets Extension to get Autocomplete for this function.
     private void OnCollisionEnter(Collision other) {
-        hits++;
-        Debug.Log("You've bumped into a thing " + hits + " times");
+        if(other.gameObject.tag != "Hits"){
+            hits++;
+            Debug.Log("You've bumped into a thing " + hits + " times");
+        }
     }
 }
